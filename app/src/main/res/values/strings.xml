@@ -8,4 +8,8 @@
     <string name="checkmark_prompt">Check this out!</string>
     <string name="toast_message">Label has been updated</string>
     <string name="switch_prompt">Switch on/off</string>
+    <string name="checkbox_status">The checkbox is now</string>
+    <string name="checkbox_on"> on!</string>
+    <string name="checkbox_off"> off!</string>
+    <string name="checkbox_unknown"> unknown!</string>
 </resources>

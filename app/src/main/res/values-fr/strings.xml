@@ -8,4 +8,8 @@
     <string name="checkmark_prompt">Regarde ça!</string>
     <string name="toast_message">L\'étiquette a été mise à jour</string>
     <string name="switch_prompt">Allumer/éteindre</string>
+    <string name="checkbox_status">La case à cocher est maintenant</string>
+    <string name="checkbox_on"> sur!</string>
+    <string name="checkbox_off"> désactivé!</string>
+    <string name="checkbox_unknown"> inconnue!</string>
 </resources>
