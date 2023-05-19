@@ -39,7 +39,8 @@
         android:layout_height="43dp"
         android:text="@string/checkmark_prompt"
         app:layout_constraintTop_toBottomOf="@id/imageButton"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        android:checked="false" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editText"
