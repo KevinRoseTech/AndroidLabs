@@ -45,6 +45,11 @@ public class NameActivity extends AppCompatActivity {
             finish();
         });
 
+        confirmationButton.setOnClickListener(click -> {
+            setResult(1, dataSent);
+            finish();
+        });
+
 
     }
 }

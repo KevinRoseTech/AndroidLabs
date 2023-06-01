@@ -1,5 +1,6 @@
 package com.example.androidlabs;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -14,13 +15,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         final Button btn = findViewById(R.id.button);
-
 
         SharedPreferences bobb = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         String storedValue = bobb.getString("storedEtString", "");
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener( click -> startActivityForResult( nextActivity, 123));
         }
 
+
     @Override
     protected void onPause() {
         super.onPause();
@@ -48,7 +50,18 @@ public class MainActivity extends AppCompatActivity {
         edit.putString("storedEtString", etString);
         edit.commit();
         String test = prefs.getString("StoredEtString", "");
-
-
     }
-}
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode == 1) {
+            finish();
+        }else {
+        }
+
+        }
+    }
+
