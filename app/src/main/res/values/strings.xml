@@ -4,4 +4,8 @@
     <string name="button1_text">NEXT</string>
     <string name="default_textview">Enter your name</string>
     <string name="hint_text"></string>
+
+    <string name="default_textview2">Welcome!</string>
+    <string name="button2_text">DON\T CALL ME THAT</string>
+    <string name="button3_text">THANK YOU</string>
 </resources>

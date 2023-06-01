@@ -2,11 +2,9 @@ package com.example.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.os.Bundle;
 
-
-public class MainActivity extends AppCompatActivity {
+public class NameActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
