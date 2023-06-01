@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Assignment2</string>
-    <string name="hello_world">Hello World</string>
-    <string name="button_text">I\'m a button!</string>
-    <string name="android_appreciation">I love Android</string>
-    <string name="button_prompt">Press Me</string>
-    <string name="checkmark_prompt">Check this out!</string>
-    <string name="toast_message">Label has been updated</string>
-    <string name="switch_prompt">Switch on/off</string>
-    <string name="checkbox_status">The checkbox is now</string>
-    <string name="checkbox_on"> on!</string>
-    <string name="checkbox_off"> off!</string>
-    <string name="checkbox_unknown"> unknown!</string>
+    <string name="app_name">Assignment3</string>
+    <string name="button1_text">NEXT</string>
+    <string name="default_textview">Enter your name</string>
+    <string name="hint_text"></string>
 </resources>
