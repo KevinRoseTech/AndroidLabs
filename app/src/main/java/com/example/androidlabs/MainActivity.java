@@ -22,6 +22,17 @@ public class MainActivity extends AppCompatActivity {
         final Button btn = findViewById(R.id.button);
         EditText et = findViewById(R.id.editText);
 
+        SharedPreferences bobb = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String storedValue = bobb.getString("storedEtString", "");
+        System.out.println(storedValue);
+
+        Toast bob = Toast.makeText(this,storedValue, Toast.LENGTH_LONG);
+
+        bob.show();
+
+
+
+        //Next activity
         Intent nextActivity = new Intent (this, NameActivity.class);
         nextActivity.putExtra("name", et.getText());
         btn.setOnClickListener( click -> startActivityForResult( nextActivity, 123));
@@ -31,14 +42,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         EditText et = findViewById(R.id.editText);
+
         String etString = et.getText().toString();
+
         SharedPreferences prefs = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor edit = prefs.edit();
         edit.putString("storedEtString", etString);
         edit.commit();
+        String test = prefs.getString("StoredEtString", "");
 
-        Toast bob = Toast.makeText(this,etString, Toast.LENGTH_LONG);
 
-        bob.show();
     }
 }
