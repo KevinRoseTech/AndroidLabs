@@ -3,6 +3,7 @@ package com.example.androidlabs;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -21,18 +22,26 @@ public class MainActivity extends AppCompatActivity {
         final Button btn = findViewById(R.id.button);
         EditText et = findViewById(R.id.editText);
 
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+
+        SharedPreferences.Editor edit = prefs.edit();
+        edit.putString("savedname", "test");
+        //string defaultName = SharedPreferences.getString("savedName", "");
+
+
+
         Intent nextActivity = new Intent (this, NameActivity.class);
-        View.OnClickListener( click -> startActivityForResult(nextActivity, int code));
+        nextActivity.putExtra("name", et.getText());
+        btn.setOnClickListener( click -> startActivityForResult( nextActivity, 123));
 
 
         }
 
     @Override
     protected void onPause() {
+        //et.setText
         super.onPause();
-        SharedPreferences prefs = getSharedPreferences(String fileName, int mode);
 
     }
 
-}
 }
