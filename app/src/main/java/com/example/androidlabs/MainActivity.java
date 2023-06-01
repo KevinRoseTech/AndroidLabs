@@ -20,21 +20,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Button btn = findViewById(R.id.button);
-        EditText et = findViewById(R.id.editText);
+
 
         SharedPreferences bobb = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         String storedValue = bobb.getString("storedEtString", "");
-        System.out.println(storedValue);
 
-        Toast bob = Toast.makeText(this,storedValue, Toast.LENGTH_LONG);
-
-        bob.show();
-
-
+                            //Debug toast
+                            Toast bob = Toast.makeText(this,storedValue, Toast.LENGTH_LONG);
+                            bob.show();
 
         //Next activity
         Intent nextActivity = new Intent (this, NameActivity.class);
-        nextActivity.putExtra("name", et.getText());
+        nextActivity.putExtra("intentStoredValue", storedValue);
+
         btn.setOnClickListener( click -> startActivityForResult( nextActivity, 123));
         }
 
