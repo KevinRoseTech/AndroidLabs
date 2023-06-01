@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class NameActivity extends AppCompatActivity {
 
@@ -14,7 +15,11 @@ public class NameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_name);
 
         Intent dataSent = getIntent();
-        String nameSent = dataSent.getStringExtra("name");
+        //String nameSent = dataSent.getStringExtra("storedEtString");
+        //String formatNameSent = String.format(nameSent);
+        //dataSent.getStringExtra("storedEtString");
+
+
 
         //Previous button
         Button previousButton = findViewById(R.id.button2);
