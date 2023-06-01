@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -23,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btn = findViewById(R.id.button);
 
-        SharedPreferences bobb = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-        String storedValue = bobb.getString("storedEtString", "");
+        SharedPreferences getpref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        String storedValue = getpref.getString("storedEtString", "");
 
                             //Debug toast
-                            Toast bob = Toast.makeText(this,storedValue, Toast.LENGTH_LONG);
-                            bob.show();
+                            //Toast bob = Toast.makeText(this,storedValue, Toast.LENGTH_LONG);
+                            //bob.show();
 
         //Next activity
         Intent nextActivity = new Intent (this, NameActivity.class);
