@@ -1,44 +1,27 @@
 package com.example.androidlabs;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class NameActivity extends AppCompatActivity {
-
+    private TextView tvv;
+    private Button previousButton;
+    private Button confirmationButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
-
-        Intent dataSent = getIntent();
-        String nameSent = dataSent.getStringExtra("intentStoredValue");
-
-        TextView tv = findViewById(R.id.textView2);
-        String welcome = (String) tv.getText();
-
-                        //Debug toast
-                        //Toast bobb = Toast.makeText(this,welcome, Toast.LENGTH_LONG);
-                        //bobb.show();
-
-        tv.setText(welcome + " " + nameSent);
-
-
-
-                        //Debug toast
-                        //Toast bob = Toast.makeText(this,nameSent, Toast.LENGTH_LONG);
-                        //bob.show();
-
-
+        tvv = findViewById(R.id.textView2);
 
         //Previous button
-        Button previousButton = findViewById(R.id.button2);
-        //Confirmation button
-        Button confirmationButton = findViewById(R.id.button3);
+        previousButton = findViewById(R.id.button2);
+        confirmationButton = findViewById(R.id.button3);
+        Intent dataSent = getIntent();
+        String nameSent = dataSent.getStringExtra("name");
+
+        tvv.setText("welcome " +  nameSent);
 
         previousButton.setOnClickListener(click -> {
             setResult(0, dataSent);
@@ -49,7 +32,5 @@ public class NameActivity extends AppCompatActivity {
             setResult(1, dataSent);
             finish();
         });
-
-
     }
 }
