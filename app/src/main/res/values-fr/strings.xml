@@ -1,10 +1,4 @@
 <resources>
-    <string name="app_name">Devoir3</string>
-    <string name="button1_text">SUIVANT</string>
-    <string name="default_textview">Entrez votre nom</string>
-    <string name="hint_text"></string>
+    <string name="app_name">Devoir4</string>
 
-    <string name="default_textview2">Bienvenue !</string>
-    <string name="button2_text">NE M\'APPELLE PAS AINSI</string>
-    <string name="button3_text">MERCI</string>
 </resources>
