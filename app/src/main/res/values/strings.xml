@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab_4</string>
-    <string name="hint_text1">Type Here</string>
-    <string name="switch_1">Urgent</string>
-    <string name="button_1">ADD</string>
-
-
+    <string name="app_name">Lab6</string>
 </resources>
