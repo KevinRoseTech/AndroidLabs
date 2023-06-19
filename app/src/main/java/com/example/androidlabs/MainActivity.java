@@ -7,6 +7,12 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,26 +32,44 @@ public class MainActivity extends AppCompatActivity {
     class CatImages extends AsyncTask< String, Integer, String> {
 
         public String doInBackground(String ... args) {
+            try {
+            //create a URL object of what server to contact:
+            URL url = new URL(args[0]);
+
+            //open the connection
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+
+            //wait for data:
+            InputStream response = urlConnection.getInputStream();
+            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+            factory.setNamespaceAware(false);
+            XmlPullParser xpp = factory.newPullParser();
+            xpp.setInput( response , "UTF-8");
+            }
+            catch (Exception e)
+            {
+
+            }
+
+
+
             //infinite loop
-            int x = 0;
-            while (x == 0){
+            //int x = 0;
+            //while (x == 0){
                 //TODO: Implement cat
-                publishProgress(25);
-                publishProgress(50);
-                publishProgress(75);
-                return "Done";
-            }
+                //return "Done";
+            //}
 
-            for (int i = 0; i < 100; i++) {
-                try {
-                    publishProgress(i);
-                    Thread.sleep(30);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
+            //for (int i = 0; i < 100; i++) {
+                //try {
+                    //publishProgress(i);
+                    //Thread.sleep(30);
+                //} catch (Exception e) {
+                    //e.printStackTrace();
+                //}
+            //}
 
-            return null;
+            return "done";
         }
         public void onProgressUpdate(Integer ... args)
         {
