@@ -3,14 +3,19 @@ package com.example.androidlabs;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.json.JSONObject;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -21,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ProgressBar progressBar = findViewById(R.id.progressBar);
 
         CatImages req = new CatImages();
         req.execute("http://Torunski.ca/CST2335_XML.xml"
@@ -45,11 +52,14 @@ public class MainActivity extends AppCompatActivity {
             factory.setNamespaceAware(false);
             XmlPullParser xpp = factory.newPullParser();
             xpp.setInput( response , "UTF-8");
+
+
             }
             catch (Exception e)
             {
 
             }
+
 
 
 
@@ -60,20 +70,23 @@ public class MainActivity extends AppCompatActivity {
                 //return "Done";
             //}
 
-            //for (int i = 0; i < 100; i++) {
-                //try {
-                    //publishProgress(i);
-                    //Thread.sleep(30);
-                //} catch (Exception e) {
-                    //e.printStackTrace();
-                //}
-            //}
+            for (int i = 0; i < 100; i++) {
+                try {
+                    publishProgress(i);
+                    Thread.sleep(30);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
 
             return "done";
         }
         public void onProgressUpdate(Integer ... args)
         {
+            super.onProgressUpdate(args);
 
+            ProgressBar progressBar = findViewById(R.id.progressBar);
+            progressBar.setProgress(args[0]);
         }
         //Type3
         public void onPostExecute(String fromDoInBackground)
