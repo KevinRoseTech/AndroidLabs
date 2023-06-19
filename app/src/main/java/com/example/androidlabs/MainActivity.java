@@ -1,6 +1,7 @@
 package com.example.androidlabs;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,17 +22,38 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    class CatImages extends AsyncTask {
+    class CatImages extends AsyncTask< String, Integer, String> {
 
-        @Override
-        protected Object doInBackground(Object[] objects) {
+        public String doInBackground(String ... args) {
             //infinite loop
             int x = 0;
             while (x == 0){
-                //play cat images
+                //TODO: Implement cat
+                publishProgress(25);
+                publishProgress(50);
+                publishProgress(75);
+                return "Done";
             }
-            return null;
 
+            for (int i = 0; i < 100; i++) {
+                try {
+                    publishProgress(i);
+                    Thread.sleep(30);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+
+            return null;
+        }
+        public void onProgressUpdate(Integer ... args)
+        {
+
+        }
+        //Type3
+        public void onPostExecute(String fromDoInBackground)
+        {
+            Log.i("HTTP", fromDoInBackground);
         }
     }
 
