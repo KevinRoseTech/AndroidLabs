@@ -1,4 +1,5 @@
 package com.example.androidlabs;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,5 +21,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    class CatImages extends AsyncTask {
+
+        @Override
+        protected Object doInBackground(Object[] objects) {
+            //infinite loop
+            int x = 0;
+            while (x == 0){
+                //play cat images
+            }
+            return null;
+
+        }
+    }
 
 }
