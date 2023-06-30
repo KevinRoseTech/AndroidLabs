@@ -1,4 +1,6 @@
 # AndroidLabs
 # Kevin David
 # 040831067
-# Lab_07
+# Lab Final Preperation
+# The purpose of this branch is to prepare for the final project ahead of time
+# 
