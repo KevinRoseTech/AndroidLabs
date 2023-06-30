@@ -1,4 +1,5 @@
 package com.example.androidlabs;
+
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -10,7 +11,6 @@ public class DetailsFragment extends Fragment {
     TextView ntv;
     TextView htv;
     TextView mtv;
-
     public DetailsFragment() {
         //Empty constructor
     }
