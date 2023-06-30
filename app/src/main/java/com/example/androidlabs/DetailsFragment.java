@@ -11,9 +11,8 @@ public class DetailsFragment extends Fragment {
     TextView ntv;
     TextView htv;
     TextView mtv;
-    public DetailsFragment() {
-        //Empty constructor
-    }
+    //Empty constructor
+    public DetailsFragment() {}
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

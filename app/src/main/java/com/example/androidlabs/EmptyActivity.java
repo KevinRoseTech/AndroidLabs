@@ -2,7 +2,6 @@ package com.example.androidlabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
 
 public class EmptyActivity extends AppCompatActivity {
