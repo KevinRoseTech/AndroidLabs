@@ -3,7 +3,6 @@ package com.example.androidlabs;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -12,11 +11,3 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
-
-
-
-
-
-
-
-
