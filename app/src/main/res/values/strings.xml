@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Lab8</string>
+    <string name="redirect_home">Redirecting to home!</string>
+    <string name="redirect_dad_jokes">Redirecting to Dad Jokes!</string>
+    <string name="exit_message">You clicked on exit. Goodbye!</string>
 </resources>

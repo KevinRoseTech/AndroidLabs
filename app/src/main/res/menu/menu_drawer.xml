@@ -1,27 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
-
-
-
-        <!--Will need to find icons later-->
-        <!--android:icon="@drawable/ic_home"-->
         <item
             android:id="@+id/nav_home"
-
+            android:icon="@drawable/home"
             android:title="Home" />
-
-        <!--android:icon="@drawable/ic_dad_joke"-->
         <item
             android:id="@+id/nav_dad_joke"
-
+            android:icon="@drawable/dad"
             android:title="Dad Joke" />
-    </group>
-
-    <!--        android:icon="@drawable/ic_exit"  -->
-    <item
+        <item
         android:id="@+id/nav_exit"
-
+        android:icon="@drawable/exit"
         android:title="Exit" />
 
 </menu>
