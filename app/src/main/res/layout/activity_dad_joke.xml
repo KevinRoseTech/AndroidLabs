@@ -51,14 +51,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="If Apple started selling apartments, what wouldn’t be included in every unit?
-"
+            android:text="@string/joke_question"
             android:textColor="#FF0000" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Windows."
+            android:text="@string/joke_answer"
             android:textColor="#FF0000" />
 
     </LinearLayout>

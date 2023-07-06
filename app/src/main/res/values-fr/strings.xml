@@ -14,4 +14,8 @@
     <string name="button_menu_toast1">Vous avez cliqué sur Accueil</string>
     <string name="button_menu_toast2">Vous avez cliqué sur Blague de papa</string>
     <string name="button_menu_toast3">Vous avez cliqué sur quitter. Au revoir !</string>
+
+    <string name="button_menu_1">Accueil</string>
+    <string name="button_menu_2">Blagues de papa</string>
+    <string name="button_menu_3">Quitter</string>
 </resources>
