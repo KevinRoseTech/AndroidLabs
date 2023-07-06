@@ -5,4 +5,13 @@
     <string name="exit_message">Vous avez cliqué sur quitter. Au revoir !</string>
     <string name="open_nav">Ouvrir la navigation</string>
     <string name="close_nav">Fermer la navigation</string>
+
+    <string name="joke_question">Si Apple commençait à vendre des appartements, qu\'est-ce qui ne serait pas inclus dans chaque unité ?</string>
+    <string name="joke_answer">Windows !</string>
+
+    <string name="button_toast1">Vous avez cliqué sur l\'élément 1</string>
+    <string name="button_toast2">Vous avez cliqué sur l\'élément 2</string>
+    <string name="button_menu_toast1">Vous avez cliqué sur Accueil</string>
+    <string name="button_menu_toast2">Vous avez cliqué sur Blague de papa</string>
+    <string name="button_menu_toast3">Vous avez cliqué sur quitter. Au revoir !</string>
 </resources>

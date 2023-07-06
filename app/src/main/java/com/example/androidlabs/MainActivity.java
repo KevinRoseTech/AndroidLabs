@@ -11,7 +11,6 @@ public class MainActivity extends BaseActivity {
         setupNavigationDrawer();
     }
 }
-//TODO: Change title to app name string
-//TODO: Localize to french(?)
-//TODO: Remove menu with menu icon
-//TODO: Make Dad Activity work when clicked and add dad joke
+
+
+
