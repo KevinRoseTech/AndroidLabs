@@ -48,6 +48,19 @@
 
         </androidx.appcompat.widget.Toolbar>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If Apple started selling apartments, what wouldn’t be included in every unit?
+"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Windows."
+            android:textColor="#FF0000" />
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
