@@ -1,4 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
         <item
         android:id="@+id/nav_home"
         android:icon="@drawable/home"
@@ -11,4 +13,6 @@
         android:id="@+id/nav_exit"
         android:icon="@drawable/exit"
         android:title="Exit" />
+
+
 </menu>

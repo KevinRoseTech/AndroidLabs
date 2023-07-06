@@ -4,4 +4,8 @@
     <string name="redirect_home">Redirecting to home!</string>
     <string name="redirect_dad_jokes">Redirecting to Dad Jokes!</string>
     <string name="exit_message">You clicked on exit. Goodbye!</string>
+    <string name="open_nav">You clicked on exit. Goodbye!</string>
+    <string name="close_nav">You clicked on exit. Goodbye!</string>
+
+
 </resources>
