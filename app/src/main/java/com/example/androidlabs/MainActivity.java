@@ -13,4 +13,4 @@ public class MainActivity extends BaseActivity {
 }
 
 
-
+//todo: manually update each toast message and menu drawer with the constant string
