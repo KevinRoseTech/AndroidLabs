@@ -48,22 +48,6 @@ public class BaseActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton overflowButton = (ImageButton) findViewById(R.id.imageButton_overflow);
-        overflowButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopupMenu popup = new PopupMenu(BaseActivity.this, v);
-                popup.getMenuInflater().inflate(R.menu.menu_drawer, popup.getMenu());
-
-                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-                    public boolean onMenuItemClick(MenuItem item) {
-                        return true;
-                    }
-                });
-
-                popup.show();
-            }
-        });
     }
 
     protected void setupNavigationDrawer() {
