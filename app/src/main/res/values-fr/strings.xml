@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Lab8</string>
-    <string name="redirect_home">Redirecting to home!</string>
-    <string name="redirect_dad_jokes">Redirecting to Dad Jokes!</string>
-    <string name="exit_message">You clicked on exit. Goodbye!</string>
-    <string name="open_nav">You clicked on exit. Goodbye!</string>
-    <string name="close_nav">You clicked on exit. Goodbye!</string>
+    <string name="redirect_home">Redirection vers l\'accueil !</string>
+    <string name="redirect_dad_jokes">Redirection vers les blagues de papa !</string>
+    <string name="exit_message">Vous avez cliqué sur quitter. Au revoir !</string>
+    <string name="open_nav">Ouvrir la navigation</string>
+    <string name="close_nav">Fermer la navigation</string>
 </resources>
