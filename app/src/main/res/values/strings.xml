@@ -11,6 +11,8 @@
     <string name="joke_answer">Windows!</string>
     <string name="button_toast1">You clicked on item 1</string>
     <string name="button_toast2">You clicked on item 2</string>
+
+    <!-- Delete, no toast functionality needed for sub menu in Lab requirements -->
     <string name="button_menu_toast1">You clicked on Home</string>
     <string name="button_menu_toast2">You clicked on Dad Joke</string>
     <string name="button_menu_toast3">You clicked on exit. Goodbye!</string>

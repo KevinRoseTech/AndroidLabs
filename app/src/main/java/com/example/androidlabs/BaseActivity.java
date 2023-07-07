@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,16 +34,21 @@ public class BaseActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         ImageButton button1 = (ImageButton) findViewById(R.id.imageButton1);
+        String toast1 = getString(R.string.button_toast1);
+
+        //use String
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Button 1 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), toast1, Toast.LENGTH_SHORT).show();
             }
         });
 
         ImageButton button2 = (ImageButton) findViewById(R.id.imageButton2);
+        String toast2 = getString(R.string.button_toast2);
+
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "Button 2 clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), toast2, Toast.LENGTH_SHORT).show();
             }
         });
 
