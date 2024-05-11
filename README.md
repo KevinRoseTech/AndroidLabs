@@ -1,4 +1,1 @@
-# AndroidLabs
-# Kevin David
-# 040831067
-# Lab_06
+# Android practice labs
